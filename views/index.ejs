@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Test</title>
+    <title>Loy OpenWeather Minimal App</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -14,14 +14,14 @@
         <h1>City Temperature Checker</h1>
         <fieldset>
             <form action="/" method="post">
-                <input name="city" type="text" class="city-input" placeholder="Enter a City" required>
-                <input type="submit" class="query-button" value="Get Weather">
+                <input name="city" type="text" class="city-input" placeholder="Enter a City name like Abuja" required>
+                <input type="submit" class="query-button" value="Get Weather Details">
             </form>
             <% if(weather !== null){ %>
                 <p>
                     <%= weather %>
                 </p>
-                <% } %>
+            <% } %>
 
                     <% if(error !== null){ %>
                         <p>
